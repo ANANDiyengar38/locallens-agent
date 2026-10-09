@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.env
+.venv/
+venv/
+
+# Local Vector Database & Storage
+qdrant_db/
+.DS_Store
+Thumbs.db
+

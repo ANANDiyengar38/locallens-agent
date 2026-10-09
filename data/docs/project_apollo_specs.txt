@@ -1,0 +1,19 @@
+# Project Apollo - Confidential Internal Specifications (2026)
+
+## 1. Project Overview
+Project Apollo is our internal next-generation autonomous drone platform designed for environmental inspection and search-and-rescue operations.
+Lead Engineer: Dr. Samantha Vance
+Project Budget: $4.2 Million
+Launch Target: Q3 2026
+
+## 2. Technical Hardware Architecture
+- Power Unit: Dual Solid-State Lithium batteries providing up to 90 minutes of continuous flight time.
+- Processing Unit: Embedded Jetson Orin Nano running a lightweight quantized vision model.
+- Communications: Mesh Wi-Fi 7 with fall-back satellite uplink (Iridium network).
+- Operating Temperature: Rated between -20°C and 55°C.
+
+## 3. Compliance and Safety Guidelines
+- Maximum allowed autonomous altitude: 120 meters (400 feet) above ground level.
+- Geofencing: Hardcoded no-fly zones around all Category A public airports within a 15 km radius.
+- Fail-safe trigger: Automatic return-to-base (RTB) initiates when battery level drops below 18%.
+
