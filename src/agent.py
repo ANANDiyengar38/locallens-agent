@@ -1,4 +1,4 @@
-from langchain_community.chat_models import ChatOllama
+from langchain_ollama import ChatOllama
 from langchain_core.messages import SystemMessage, HumanMessage
 from langgraph.graph import StateGraph, START, END
 from langgraph.prebuilt import ToolNode, tools_condition
@@ -21,7 +21,7 @@ Rules:
 
 # 2. Setup Ollama LLM and Bind Tools
 tools = [search_private_docs, search_web]
-llm = ChatOllama(model="llama3", temperature=0)
+llm = ChatOllama(model="llama3.2", temperature=0)
 llm_with_tools = llm.bind_tools(tools)
 
 
